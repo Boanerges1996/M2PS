@@ -1,0 +1,60 @@
+.headgrade{
+    width: 100%;
+    height: 94%;
+    background-color: cyan;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    z-index: 2;
+}
+
+
+.headinputs{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(145, 143, 143);
+    float: left;
+}
+.headinputs div label{
+    margin-left: 8px;
+}
+hr{
+    color: black;
+    border: 1px black solid;
+}
+.headinputs div table tr td span{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+}
+.headinputs div table tr td div img{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+
+}
+
+
+
+.headgraphs{
+    height: 60%;
+    width: 60%;
+    background-color: gray;
+    float: left;
+}
+.headdescription{
+    height: 40%;
+    width: 60%;
+    background-color: rgb(145, 143, 143);
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.headdescription h4{
+    font-size: 20px;
+}
+.headdescription h6{
+    font-size: 15px;
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
 import './wholepage.css';
+import Headgrade from './first tab/headgrade';
 
 
 export default class Wholepage extends React.Component{
@@ -8,6 +9,7 @@ export default class Wholepage extends React.Component{
             <div className="whole">
                 <Header />
                 <Logo />
+                <Headgrade />
             </div>
         )
     }
@@ -17,16 +19,16 @@ const Header =(props)=>{
     return (
         <div className="tabs">
             <div className="headersame" onClick={props.clickGrind}>
-                Extraction vrs Grind
+                Headgrade vrs Extraction
             </div>
             <div className="headersame" onClick={props.clickCyanide}>
-                Extraction vrs Cyanide
+                Cyanide vrs Extraction
             </div>
             <div className="headersame" onClick={props.clickHeadgrade}>
-                Extraction vrs Headgrade
+                Grind vrs Extraction
             </div>
             <div className="headersame" onClick={props.clickRecovery}>
-                Recovery Sheet
+                Recovery Model
             </div>
 
         </div>
