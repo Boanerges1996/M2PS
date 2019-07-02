@@ -1,0 +1,25 @@
+.recovery{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.firstPart{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: rgb(145, 143, 143);
+}
+.secondPart{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: rgb(145, 143, 1);
+}
+
+
+table tr td span{
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+}

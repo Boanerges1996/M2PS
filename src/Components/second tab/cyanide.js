@@ -86,7 +86,7 @@ export default class Cyanide extends React.Component{
                     </div>
 
                 </div>
-                <div className="headgraphs">
+                <div className="cyanidegraphs">
 
                 </div>
                 <div className="headdescription">

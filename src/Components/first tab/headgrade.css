@@ -40,7 +40,22 @@ hr{
 .headgraphs{
     height: 60%;
     width: 60%;
-    background-color: gray;
+    background-image: url('headgrade.png');
+    background-size: 100% 100%;
+    float: left;
+}
+.cyanidegraphs{
+    height: 60%;
+    width: 60%;
+    background-image: url('cyanide.png');
+    background-size: 100% 100%;
+    float: left;
+}
+.grindgraphs{
+    height: 60%;
+    width: 60%;
+    background-image: url('grind.png');
+    background-size: 100% 100%;
     float: left;
 }
 .headdescription{

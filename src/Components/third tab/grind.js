@@ -86,7 +86,7 @@ export default class Grind extends React.Component{
                     </div>
 
                 </div>
-                <div className="headgraphs">
+                <div className="grindgraphs">
 
                 </div>
                 <div className="headdescription">
