@@ -1,6 +1,7 @@
 import React from 'react';
 import './wholepage.css';
 import Headgrade from './first tab/headgrade';
+import Cyanide from './second tab/cyanide';
 
 
 export default class Wholepage extends React.Component{
@@ -9,7 +10,8 @@ export default class Wholepage extends React.Component{
             <div className="whole">
                 <Header />
                 <Logo />
-                <Headgrade />
+                {/* <Headgrade /> */}
+                <Cyanide />
             </div>
         )
     }
