@@ -1,0 +1,76 @@
+{
+  "name": "M2PS",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This is used by the new mont organization for simulation",
+  "author": {
+    "name": "Boanerges Inc.",
+    "email": "samsonnkrumah253@gmail.com"
+  },
+  "build": {
+    "appId": "com.Boanerges.simulator",
+    "productName": "M2PS",
+    "target": "NSIS",
+    "icon": "icon.png",
+    "win": {
+      "target": "nsis",
+      "icon": "/build/icon.png"
+    },
+    "nsis": {
+      "oneClick":false,
+      "perMachine":false,
+      "allowToChangeInstallationDirectory": true,
+      "displayLanguageSelector": true
+    },
+    "directories": {
+      "output": "build"
+    }
+  },
+  "main": "public/electron.js",
+  "homepage": "./",
+  "dependencies": {
+    "@types/jest": "24.0.14",
+    "@types/node": "12.0.8",
+    "@types/react": "16.8.20",
+    "@types/react-dom": "16.8.4",
+    "cross-env": "^5.2.0",
+    "electron-is-dev": "^1.1.0",
+    "plotly.js": "^1.48.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-plotly.js": "^2.3.0",
+    "react-scripts": "3.0.1",
+    "typescript": "3.5.2"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test --env=jsdom",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "release": "npm run react-build && electron-builder --publish=always",
+    "build": "npm run react-build && npm run electron-build",
+    "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "electron": "^5.0.3",
+    "electron-builder": "^20.43.0",
+    "wait-on": "^3.2.0"
+  }
+}
