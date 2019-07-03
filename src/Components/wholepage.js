@@ -10,35 +10,48 @@ export default class Wholepage extends React.Component{
     state ={
         showHead:true,
         showCyanide:false,
-        showGrind:false
+        showGrind:false,
+        showRecover:false
     }
     headClicked = ()=>{
         this.setState({
             showHead:true,
             showCyanide:false,
-            showGrind:false
+            showGrind:false,
+            showRecover:false
         })
     }
     cyanideClicked = ()=>{
         this.setState({
             showHead:false,
             showCyanide:true,
-            showGrind:false
+            showGrind:false,
+            showRecover:false
         })
     }
     grindClicked=()=>{
         this.setState({
             showHead:false,
             showCyanide:false,
-            showGrind:true
+            showGrind:true,
+            showRecover:false
+        })
+    }
+    recoveryClicked=()=>{
+        this.setState({
+            showHead:false,
+            showCyanide:false,
+            showGrind:false,
+            showRecover:true
         })
     }
     render(){
         let head = null
         let cyanide = null
         let grind = null
+        let lastrecover = null;
         if (this.state.showHead){
-            // head = <Headgrade />
+            head = <Headgrade />
         }
         if(this.state.showCyanide){
             cyanide=<Cyanide />
@@ -46,20 +59,26 @@ export default class Wholepage extends React.Component{
         if(this.state.showGrind){
             grind = <Grind />
         }
+        if(this.state.showRecover){
+            lastrecover=<Recoverymodel />
+        }
         return (
             <div className="whole">
-                <Header clickHead={this.headClicked} 
+                <Header 
+                    clickHead={this.headClicked} 
                     clickCyanide={this.cyanideClicked}
                     clickGrind={this.grindClicked}
+                    clickRecovery={this.recoveryClicked}
                     />
                 <Logo />
                 {head}
                 {cyanide}
                 {grind}
+                {lastrecover}
                 {/* <Cyanide /> */}
                 {/* <Grind /> */}
                 {/* <Recoverymodel /> */}
-                <Recoverymodel />
+                {/* <Recoverymodel /> */}
             </div>
         )
     }

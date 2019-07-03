@@ -1,7 +1,8 @@
 .recovery{
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: rgb(145, 143, 143);
+    text-align: left;
 }
 .firstPart{
     width: 50%;
@@ -13,7 +14,7 @@
     width: 50%;
     height: 100%;
     float: left;
-    background-color: rgb(145, 143, 1);
+    background-color: rgb(145, 143, 143);
 }
 
 
@@ -27,4 +28,10 @@ table tr td img{
     display: inline-block;
     width: 100px;
     height: 50px;
+}
+table tr td div{
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: white;
 }
