@@ -23,3 +23,8 @@ table tr td span{
     height: 30px;
     background-color: white;
 }
+table tr td img{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}

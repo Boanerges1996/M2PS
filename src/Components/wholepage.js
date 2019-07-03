@@ -38,7 +38,7 @@ export default class Wholepage extends React.Component{
         let cyanide = null
         let grind = null
         if (this.state.showHead){
-            head = <Headgrade />
+            // head = <Headgrade />
         }
         if(this.state.showCyanide){
             cyanide=<Cyanide />
@@ -59,6 +59,7 @@ export default class Wholepage extends React.Component{
                 {/* <Cyanide /> */}
                 {/* <Grind /> */}
                 {/* <Recoverymodel /> */}
+                <Recoverymodel />
             </div>
         )
     }
