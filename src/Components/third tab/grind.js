@@ -9,7 +9,7 @@ export default class Grind extends React.Component{
     state = {
         grind:10,
         recovery:((10*0.262539)+69.73867).toFixed(2),
-        images:smiley,
+        images:sad,
         targetRecover:2,
         varyingPercent:((2-69.738673)/0.262539).toFixed(2)
     }
@@ -46,7 +46,6 @@ export default class Grind extends React.Component{
                     </div>
                     <br />
                     <br />
-                    <hr />
 
                     <div>
                         <h3>Output</h3>
@@ -65,7 +64,6 @@ export default class Grind extends React.Component{
                     </div>
                     <br />
                     <br />
-                    <hr />
                     <div>
                         <h3>What ff???</h3>
                         <table>

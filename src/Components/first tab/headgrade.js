@@ -46,7 +46,7 @@ export default class Headgrade extends React.Component{
                     </div>
                     <br />
                     <br />
-                    <hr />
+
 
                     <div>
                         <h3>Output</h3>
@@ -65,7 +65,7 @@ export default class Headgrade extends React.Component{
                     </div>
                     <br />
                     <br />
-                    <hr />
+
                     <div>
                         <h3>What ff???</h3>
                         <table>

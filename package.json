@@ -17,10 +17,17 @@
       "icon": "/build/icon.png"
     },
     "nsis": {
-      "oneClick":false,
-      "perMachine":false,
+      "oneClick": false,
+      "perMachine": false,
       "allowToChangeInstallationDirectory": true,
-      "displayLanguageSelector": true
+      "displayLanguageSelector": true,
+      "allowElevation": true,
+      "installerIcon": "icon.png",
+      "uninstallerIcon": "icon.png",
+      "deleteAppDataOnUninstall": true,
+      "runAfterFinish": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "M2PS"
     },
     "directories": {
       "output": "build"

@@ -71,14 +71,12 @@ export default class Wholepage extends React.Component{
                     clickRecovery={this.recoveryClicked}
                     />
                 <Logo />
-                {head}
-                {cyanide}
-                {grind}
-                {lastrecover}
-                {/* <Cyanide /> */}
-                {/* <Grind /> */}
-                {/* <Recoverymodel /> */}
-                {/* <Recoverymodel /> */}
+                <div className="mainbody">
+                    {head}
+                    {cyanide}
+                    {grind}
+                    {lastrecover}
+                </div>
             </div>
         )
     }

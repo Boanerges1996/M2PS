@@ -92,44 +92,16 @@ export default class Recoverymodel extends React.Component{
     changeToHeadgrade =e=>{
         this.setState({
             checkradio:"headgrade",
-            symbol:"g/t",
-            output:((this.state.target_recovery-(0.05495*this.state.cyanide)-(0.4145*this.state.grind)-40.35926)/3.9842).toFixed(2)
-        },()=>{
-            if(this.state.checkradio==="headgrade"){
-                this.setState({
-                    output:((this.state.target_recovery-(0.05495*this.state.cyanide)-(0.4145*this.state.grind)-40.35926)/3.9842).toFixed(2),
-                    symbol:"g/t"
-                })
-            }
-            // else if(this.state.checkradio==="cyanide"){
-            //     this.setState({
-            //         output:((this.state.target_recovery-(3.9842*this.state.headgrade)-(0.4145*this.state.grind)-40.3526)/0.05495).toFixed(2),
-            //         symbol:"ppm"
-            //     })
-
-            // }
+            output:((this.state.target_recovery-(0.05495*this.state.cyanide)-(0.4145*this.state.grind)-40.35926)/3.9842).toFixed(2),
+            symbol:"g/t"
         })
     }
     changeToCyanide=e=>{
-        this.setState({
-            checkradio:"cyanide",
-            symbol:"ppm",
-            output:((this.state.target_recovery-(3.9842*this.state.headgrade)-(0.4145*this.state.grind)-40.3526)/0.05495).toFixed(2),
-        },()=>{
-            if(this.state.checkradio==="cyanide"){
-                this.setState({
-                    output:((this.state.target_recovery-(3.9842*this.state.headgrade)-(0.4145*this.state.grind)-40.3526)/0.05495).toFixed(2),
-                    symbol:"ppm"
-                })
-            }
-            // else if(this.state.checkradio==="cyanide"){
-            //     this.setState({
-            //         output:((this.state.target_recovery-(3.9842*this.state.headgrade)-(0.4145*this.state.grind)-40.3526)/0.05495).toFixed(2),
-            //         symbol:"ppm"
-            //     })
-
-            // }
-        })
+       this.setState({
+           checkradio:"cyanide",
+           output:((this.state.target_recovery-(3.9842*this.state.headgrade)-(0.4145*this.state.grind)-40.3526)/0.05495).toFixed(2),
+           symbol:"ppm"
+       })
     }
     
     render(){
@@ -155,7 +127,6 @@ export default class Recoverymodel extends React.Component{
                         </tr>
                     </table>
                     <br />
-                    <hr />
                     <h2>Output</h2>
                     <h5>Calculated recovery based on model</h5>
                     <table>
@@ -181,11 +152,11 @@ export default class Recoverymodel extends React.Component{
                     <table>
                         <tr>
                             <td>Headgrade</td>
-                            <td><input type="radio" name="recover" value="headgrade" onChange={this.changeToHeadgrade} checked/></td>
+                            <td><input type="radio" name="recover" value="headgrade" onChange={this.changeToHeadgrade} checked={this.state.checkradio==="headgrade"}/></td>
                         </tr>
                         <tr>
                             <td>Cyanide concentration</td>
-                            <td><input type="radio" name="recover" value="cyanide" onChange={this.changeToCyanide}/></td>
+                            <td><input type="radio" name="recover" value="cyanide" onChange={this.changeToCyanide} checked={this.state.checkradio==="cyanide"}/></td>
                         </tr>
                     </table>
                     <br />

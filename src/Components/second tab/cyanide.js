@@ -9,7 +9,7 @@ export default class Cyanide extends React.Component{
     state = {
         cyanide:10,
         recovery:((10*0.056847)+78.7693).toFixed(2),
-        images:smiley,
+        images:sad,
         targetRecover:2,
         varyingPercent:((2-78.7693)/0.056847).toFixed(2)
     }
@@ -46,7 +46,7 @@ export default class Cyanide extends React.Component{
                     </div>
                     <br />
                     <br />
-                    <hr />
+
 
                     <div>
                         <h3>Output</h3>
@@ -65,7 +65,6 @@ export default class Cyanide extends React.Component{
                     </div>
                     <br />
                     <br />
-                    <hr />
                     <div>
                         <h3>What ff???</h3>
                         <table>
